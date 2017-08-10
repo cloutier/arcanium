@@ -9,6 +9,7 @@ module Handler.Search where
 import Import
 import Yesod.Form.Bootstrap3 (BootstrapFormLayout (..), renderBootstrap3)
 import Text.Julius (RawJS (..))
+import Text.Regex.Posix
 
 -- Define our data that will be used for creating the form.
 data FileForm = FileForm
@@ -23,15 +24,17 @@ data FileForm = FileForm
 -- The majority of the code you will write in Yesod lives in these handler
 -- functions. You can spread them across multiple files if you are so
 -- inclined, or create a single monolithic file.
-getSearchR :: Handler Html
+getSearchR :: Handler ()
 getSearchR = do
 	let searchEngine = "https://duckduckgo.com/?q=" :: String
 	searchTermsMaybe <- lookupGetParams "q"
 	let searchTerms = intercalate " " $ map unpack searchTermsMaybe
-	let url = searchEngine ++ searchTerms
-	
-	$logDebug "redirecting"
-	-- $logDebug test 
+        let searchEngine2 = findBangs searchTerms
+	let url = searchEngine2 ++ searchTerms
+        -- bangs <- findBangs searchTerms
+
+	$logDebug "test"
+        -- $logDebug test 
 	-- $logDebug $ searchTermsMaybe
 	-- defaultLayout $ do
 	    -- let searchTerm = "Welcome To Yesod!" :: String
@@ -39,3 +42,8 @@ getSearchR = do
 	  --  $(widgetFile "search")
 	redirect $ url 
 
+findBangs :: String -> String
+findBangs query
+  | matches = "https://google.com/search?q="
+  | otherwise = "https://duckduckgo.com/?q="
+  where matches = query =~ ("( *!g +)" :: String) :: Bool
