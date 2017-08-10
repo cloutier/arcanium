@@ -44,9 +44,9 @@ stanzas:
   - type: redirect
 
     hosts:
-      - arcanium.com
+      - arcanium.org
     actions:
-      - host: www.arcanium.com
+      - host: www.arcanium.org
         # secure: false
         # port: 80
 
