@@ -8,3 +8,12 @@
             <a href="http://www.yesodweb.com/book/" .btn.btn-info.btn-lg>
                 Read the Book
 
+
+<div #search>
+    <h1 #title>Arcanium</h1>
+    <br>
+    <form action="/search">
+        <div .input-group .input-group-lg #searchbar>
+        <input type="text" name="q" .form-control placeholder="Search for...">
+        <span .input-group-b3tn>
+        <button .btn .btn-default type="submit">Go!</button>
