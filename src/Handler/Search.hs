@@ -44,6 +44,9 @@ getSearchR = do
 
 findBangs :: String -> String
 findBangs query
-  | matches = "https://google.com/search?q="
-  | otherwise = "https://duckduckgo.com/?q="
-  where matches = query =~ ("( *!g +)" :: String) :: Bool
+  | matches "( *!g +)" = "https://google.com/search?q="
+  | matches "( *!b +)" = "https://www.bing.com/search?q="
+  | otherwise = "https://google.com/search?q="
+  where
+    matches :: String -> Bool
+    matches a = query =~ a :: Bool
