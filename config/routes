@@ -4,10 +4,7 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/ HomeR GET POST
-/test TestR GET
+/ HomeR GET
+
 /search SearchR GET
 
-/comments CommentR POST
-
-/profile ProfileR GET
