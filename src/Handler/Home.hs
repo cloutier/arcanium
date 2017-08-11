@@ -22,7 +22,9 @@ data FileForm = FileForm
 -- The majority of the code you will write in Yesod lives in these handler
 -- functions. You can spread them across multiple files if you are so
 -- inclined, or create a single monolithic file.
-getHomeR :: Handler Value
+getHomeR :: Handler Html
 -- getHomeR = defaultLayout [whamlet |"test"|]
 getHomeR = do
-  return "arcanium" 
+  -- return "arcanium" 
+  defaultLayout $ do
+    $(widgetFile "homepage")
