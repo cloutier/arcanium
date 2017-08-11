@@ -1,6 +1,6 @@
-.masthead,
-.navbar {
-    background-color: rgb(27, 28, 29);
+body, .navbar {
+	background: url("//vincent.cloutier.co/arcanium-frontend/background.jpg") no-repeat center center fixed;
+	background-size: cover; 
 }
 
 .navbar-default .navbar-nav > .active > a {
@@ -70,4 +70,19 @@
 
 #message {
     margin-bottom: 40px;
+}
+
+#title {
+	font-family: 'Averia Sans Libre', cursive;
+}
+#search {
+	width:600px;
+	height: 300px;
+	margin-top: 300px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#searchbar {
+	width: 100%;
 }
