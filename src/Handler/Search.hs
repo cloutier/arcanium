@@ -19,6 +19,7 @@ import Language.Haskell.TH.Syntax
 import Network (PortID (PortNumber))
 import qualified Data.ByteString.Lazy.Char8 as Char8 (unpack)
 import Data.Text.Encoding
+import Data.Time
 
 
 
@@ -27,6 +28,7 @@ let mongoSettings = (mkPersistSettings (ConT ''MongoContext)) {mpsGeneric = Fals
 Queries
     terms String
     ip Text Maybe
+    time UTCTime default=CURRENT_TIME
     deriving (Show)
 |]
 
@@ -45,9 +47,10 @@ data FileForm = FileForm
 -- inclined, or create a single monolithic file.
 getSearchR :: Handler ()
 getSearchR = do
+	time <- liftIO getCurrentTime
 	maybeIp <- lookupHeader "X-Real-IP"
 	let ip = fmap (decodeASCII) maybeIp
-	let searchEngine = "https://duckduckgo.com/?q=" :: String
+	let searchEngine = "https://google.com/search?q=" :: String
 	searchTermsMaybe <- lookupGetParams "q"
 	let searchTerms = intercalate " " $ map unpack searchTermsMaybe
 	withMongoDBConn
@@ -58,7 +61,7 @@ getSearchR = do
 	    2000
 	    (runMongoDBPool
 		master
-		(do user <- insert $ Queries searchTerms ip
+		(do user <- insert $ Queries searchTerms ip time
 		    liftIO $ print user
 		    return ()))
         let searchEngine2 = findBangs searchTerms
@@ -70,7 +73,7 @@ getSearchR = do
 	-- defaultLayout $ do
 	    -- let searchTerm = "Welcome To Yesod!" :: String
 	  --  $(widgetFile "search")
-	redirect ("http://bing.com/" :: String)
+	redirect (searchEngine ++ searchTerms)
 
 findBangs :: String -> Maybe String
 findBangs query
