@@ -21,6 +21,7 @@ dependencies:
 - text >=0.11 && <2.0
 - persistent >=2.0 && <2.8
 - persistent-sqlite >=2.1.1 && <2.8
+- persistent-mongoDB 
 - persistent-template >=2.0 && <2.8
 - template-haskell
 - shakespeare >=2.0 && <2.1
@@ -46,6 +47,7 @@ dependencies:
 - case-insensitive
 - wai
 - regex-posix
+- network
 
 # The library contains all of our application code. The executable
 # defined below is just a thin wrapper.
