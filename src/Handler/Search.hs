@@ -30,23 +30,21 @@ getSearchR = do
 	searchTermsMaybe <- lookupGetParams "q"
 	let searchTerms = intercalate " " $ map unpack searchTermsMaybe
         let searchEngine2 = findBangs searchTerms
-	let url = searchEngine2 ++ searchTerms
-        -- bangs <- findBangs searchTerms
+        let searchEngine3 = fmap (++ searchTerms) searchEngine2
+	case searchEngine3 of Just x -> redirect (x :: String)
+	     		      Nothing -> $logDebug "no redirect"
 
 	$logDebug "test"
-        -- $logDebug test 
-	-- $logDebug $ searchTermsMaybe
 	-- defaultLayout $ do
 	    -- let searchTerm = "Welcome To Yesod!" :: String
-	  --  let searchTerm = test2
 	  --  $(widgetFile "search")
-	redirect $ url 
+	redirect ("http://bing.com/" :: String)
 
-findBangs :: String -> String
+findBangs :: String -> Maybe String
 findBangs query
-  | matches "( *!g +)" = "https://google.com/search?q="
-  | matches "( *!b +)" = "https://www.bing.com/search?q="
-  | otherwise = "https://google.com/search?q="
+  | matches "( *!g +)" = Just "https://google.com/search?q="
+  | matches "( *!b +)" = Just "https://www.bing.com/search?q="
+  | otherwise = Nothing
   where
     matches :: String -> Bool
     matches a = query =~ a :: Bool
