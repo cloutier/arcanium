@@ -11,6 +11,7 @@ module Handler.Search where
 import Import
 import Yesod.Form.Bootstrap3 (BootstrapFormLayout (..), renderBootstrap3)
 import Text.Julius (RawJS (..))
+import Text.Regex (subRegex, mkRegex)
 import Text.Regex.Posix
 import Database.Persist 
 import Database.Persist.TH
@@ -65,8 +66,8 @@ getSearchR = do
 		    liftIO $ print user
 		    return ()))
         let searchEngine2 = findBangs searchTerms
-        let searchEngine3 = fmap (++ searchTerms) searchEngine2
-	case searchEngine3 of Just x -> redirect (x :: String)
+        -- let searchEngine3 = fmap (++ searchTerms) searchEngine2
+	case searchEngine2 of Just x -> redirect (x :: String)
 	     		      Nothing -> $logDebug "no redirect"
 
 	$logDebug "test"
@@ -77,9 +78,18 @@ getSearchR = do
 
 findBangs :: String -> Maybe String
 findBangs query
-  | matches "( *!g +)" = Just "https://google.com/search?q="
-  | matches "( *!b +)" = Just "https://www.bing.com/search?q="
+  | matches "g" = result "g" "https://google.com/search?q="
+  | matches "b" = result "b" "https://www.bing.com/search?q="
   | otherwise = Nothing
   where
     matches :: String -> Bool
-    matches a = query =~ a :: Bool
+    matches a = query =~ (bangRegex a) :: Bool
+
+    unbang :: String -> String
+    unbang match = subRegex (mkRegex $ bangRegex match) query ""
+
+    result :: String -> String -> Maybe String
+    result bang url = Just $ url ++ (unbang bang)
+
+    bangRegex :: String -> String
+    bangRegex bang = "( *!" ++ bang ++ "( +|$))"
