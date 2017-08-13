@@ -80,6 +80,11 @@ findBangs :: String -> Maybe String
 findBangs query
   | matches "g" = result "g" "https://google.com/search?q="
   | matches "b" = result "b" "https://www.bing.com/search?q="
+  | matches "ddg" = result "ddg" "https://www.duckduckgo.com/?q="
+  | matches "wen" = result "wen" "https://en.wikipedia.org/w/index.php?search="
+  | matches "wfr" = result "wfr" "https://fr.wikipedia.org/w/index.php?search="
+  | matches "aca" = result "aca" "https://www.amazon.ca/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords="
+  | matches "wikidata" = result "wikidata" "https://www.wikidata.org/w/index.php?search="
   | otherwise = Nothing
   where
     matches :: String -> Bool
