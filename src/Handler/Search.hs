@@ -85,6 +85,7 @@ findBangs query
   | matches "wfr" = result "wfr" "https://fr.wikipedia.org/w/index.php?search="
   | matches "aca" = result "aca" "https://www.amazon.ca/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords="
   | matches "wikidata" = result "wikidata" "https://www.wikidata.org/w/index.php?search="
+  | matches "gh" = result "gh" "https://github.com/search?utf8=%E2%9C%93&q="
   | otherwise = Nothing
   where
     matches :: String -> Bool
