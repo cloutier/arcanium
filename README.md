@@ -10,7 +10,9 @@ http://yacy.net/
 
 http://commoncrawl.org/the-data/examples/
 
+https://en.wikipedia.org/wiki/Selection-based_search
 
+https://developer.mozilla.org/en-US/Add-ons/Creating_OpenSearch_plugins_for_Firefox
 
 # Licence
 

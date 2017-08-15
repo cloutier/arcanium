@@ -41,3 +41,4 @@
     <div .container>
         <p .text-muted>
             #{appCopyright $ appSettings master}
+            <a href="https://github.com/cloutier/arcanium">Source code</a>
