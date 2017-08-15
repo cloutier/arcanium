@@ -6,3 +6,4 @@
         <input type="text" name="q" .form-control placeholder="Search for...">
         <span .input-group-b3tn>
         <button .btn .btn-default type="submit">Go!</button>
+<button .btn .btn-default onclick="window.external.AddSearchProvider('/static/opensearch.xml');">add to search engines!</button>
