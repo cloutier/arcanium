@@ -11,8 +11,6 @@ module Handler.Search where
 import Import
 import Yesod.Form.Bootstrap3 (BootstrapFormLayout (..), renderBootstrap3)
 import Text.Julius (RawJS (..))
-import Text.Regex (subRegex, mkRegex)
-import Text.Regex.Posix
 import Database.Persist 
 import Database.Persist.TH
 import Database.Persist.MongoDB 
