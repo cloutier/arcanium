@@ -4,7 +4,7 @@ Free and open source search engine
 
 https://duckduckgo.com/bang
 
-You can help supporting more bangs by editing [this file)[https://github.com/cloutier/arcanium/blob/master/src/Import/Bangs.hs].
+You can help supporting more bangs by editing [this file](https://github.com/cloutier/arcanium/blob/master/src/Import/Bangs.hs).
 
 # Useful links
 
