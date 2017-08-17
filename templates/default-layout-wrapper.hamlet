@@ -12,6 +12,7 @@ $newline never
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="/static/opensearch.xml" rel="search" title="arcanium" type="application/opensearchdescription+xml">
+    <link href='https://fonts.googleapis.com/css?family=Averia+Sans+Libre:300' rel='stylesheet' type='text/css'>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
