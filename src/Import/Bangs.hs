@@ -26,13 +26,14 @@ findBangs query
   | matches "wdt" = result "wdt" "https://www.wikidata.org/w/index.php?search="
   | matches "gh" = result "gh" "https://github.com/search?utf8=%E2%9C%93&q="
   | matches "tpb" = result "tpb" "https://thepiratebay.org/search/"
+  | matches "wa" = result "wa" "https://www.wolframalpha.com/input/?i="
   | otherwise = Nothing
   where
     matches :: String -> Bool
     matches x = query =~ (bangRegex x) :: Bool
 
     unbang :: String -> String
-    unbang match = subRegex (mkRegex $ bangRegex match) query ""
+    unbang x = subRegex (mkRegex $ bangRegex x) query ""
 
     result :: String -> String -> Maybe String
     result bang url = Just $ url ++ (unbang bang)
