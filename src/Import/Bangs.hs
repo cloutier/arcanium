@@ -19,6 +19,7 @@ findBangs query
   | matches "b" = result "b" "https://www.bing.com/search?q="
   | matches "bing" = result "bing" "https://www.bing.com/search?q="
   | matches "ddg" = result "ddg" "https://www.duckduckgo.com/?q="
+  | matches "w" = result "w" "https://en.wikipedia.org/w/index.php?search="
   | matches "wen" = result "wen" "https://en.wikipedia.org/w/index.php?search="
   | matches "wfr" = result "wfr" "https://fr.wikipedia.org/w/index.php?search="
   | matches "aca" = result "aca" "https://www.amazon.ca/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords="
@@ -27,6 +28,8 @@ findBangs query
   | matches "gh" = result "gh" "https://github.com/search?utf8=%E2%9C%93&q="
   | matches "tpb" = result "tpb" "https://thepiratebay.org/search/"
   | matches "wa" = result "wa" "https://www.wolframalpha.com/input/?i="
+  | matches "yt" = result "yt" "https://www.youtube.com/results?search_query="
+  | matches "youtube" = result "youtube" "https://www.youtube.com/results?search_query="
   | otherwise = Nothing
   where
     matches :: String -> Bool
