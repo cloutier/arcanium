@@ -17,7 +17,7 @@ import Database.Persist.MongoDB
 import Language.Haskell.TH.Syntax
 import Network (PortID (PortNumber))
 import qualified Data.ByteString.Lazy.Char8 as Char8 (unpack)
-import Data.Text.Encoding
+-- import Data.Text.Encoding
 import Data.Time
 import Import.Bangs (findBangs)
 
@@ -28,6 +28,7 @@ let mongoSettings = (mkPersistSettings (ConT ''MongoContext)) {mpsGeneric = Fals
 Queries
     terms String
     ip Text Maybe
+    lang [Text] 
     time UTCTime default=CURRENT_TIME
     deriving (Show)
 |]
@@ -48,20 +49,27 @@ data FileForm = FileForm
 getSearchR :: Handler ()
 getSearchR = do
 	time <- liftIO getCurrentTime
-	maybeIp <- lookupHeader "X-Real-IP"
-	let ip = fmap (decodeASCII) maybeIp
+	maybeIp <- lookupHeader "REMOTE_ADDR"
+	maybeDNT <- lookupHeader "DNT"
+	maybeHead <- getRequest 
+	maybeLang <- languages
+        --tmp <- lookupHeaders
+        --liftIO $ print $ show maybeHead
+        -- let lookupHeader = fmap listToMaybe . lookupHeaders
+        liftIO $ print maybeDNT
+	let ip = fmap (decodeUtf8) maybeIp
 	let searchEngine = "https://google.com/search?q=" :: String
 	searchTermsMaybe <- lookupGetParams "q"
 	let searchTerms = intercalate " " $ map unpack searchTermsMaybe
 	withMongoDBConn
-	    "test"
+	    "arcanium"
 	    "localhost"
 	    (PortNumber 27017)
 	    Nothing
 	    2000
 	    (runMongoDBPool
 		master
-		(do user <- insert $ Queries searchTerms ip time
+		(do user <- insert $ Queries searchTerms ip maybeLang time
 		    liftIO $ print user
 		    return ()))
         let searchEngine2 = findBangs searchTerms
