@@ -13,6 +13,8 @@ $newline never
     <meta name="author" content="">
     <link href="/static/opensearch.xml" rel="search" title="arcanium" type="application/opensearchdescription+xml">
     <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre:300" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.css">
+
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 

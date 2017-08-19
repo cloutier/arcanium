@@ -23,5 +23,22 @@ li {
 
 #addSearchEngine {
 	visibility: hidden;
+	margin-top: 50px;
 }
+
+#learnMore {
+	position: absolute;
+	top: 90vh;
+	width: 100%;
+	background-color: grey;
+	color: white;
+}
+
+#incitation {
+	height: 10vh;
+	text-align: center;
+	font-size: 5vmin;
+	padding-top: 1vh;
+}
+
 

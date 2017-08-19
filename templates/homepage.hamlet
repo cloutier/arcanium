@@ -6,6 +6,14 @@
             <input type="text" name="q" .form-control placeholder="Search for...">
             <span .input-group-btn>
                 <button .btn .btn-default type="submit">Search</button>
-<button #addSearchEngine .btn .btn-default onclick="window.external.AddSearchProvider('/static/opensearch.xml');">add to search engines!</button>
-<script>
+        <button #addSearchEngine .btn .btn-default onclick="window.external.AddSearchProvider('/static/opensearch.xml');">add to search engines!</button>
     
+<div #learnMore>
+     <div #incitation>
+         <i class="fa fa-arrow-down" aria-hidden="true"></i> The fully open source knowledge engine <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
+    <footer .footer>
+        <div .container>
+            <p .text-muted>
+                <a href="https://github.com/cloutier/arcanium">Source code</a>
+                <a href="https://commons.wikimedia.org/wiki/File:Shrouded_%288511233662%29.jpg">Background credit</a>
