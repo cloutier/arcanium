@@ -1,0 +1,6 @@
+$(function() {
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+       $("#addSearchEngine").css("visibility", "visible");
+       console.log("test");
+    }
+})
