@@ -16,6 +16,7 @@ import Database.Persist.TH
 import Database.Persist.MongoDB 
 import Language.Haskell.TH.Syntax
 import Network (PortID (PortNumber))
+import Network.Wai
 import qualified Data.ByteString.Lazy.Char8 as Char8 (unpack)
 -- import Data.Text.Encoding
 import Data.Time
@@ -27,7 +28,7 @@ let mongoSettings = (mkPersistSettings (ConT ''MongoContext)) {mpsGeneric = Fals
   in share [mkPersist mongoSettings] [persistLowerCase| 
 Queries
     terms String
-    ip Text Maybe
+    ip String
     lang [Text] 
     time UTCTime default=CURRENT_TIME
     deriving (Show)
@@ -49,15 +50,13 @@ data FileForm = FileForm
 getSearchR :: Handler ()
 getSearchR = do
 	time <- liftIO getCurrentTime
-	maybeIp <- lookupHeader "REMOTE_ADDR"
 	maybeDNT <- lookupHeader "DNT"
-	maybeHead <- getRequest 
 	maybeLang <- languages
+        ip <- fmap (show . remoteHost . reqWaiRequest) getRequest
         --tmp <- lookupHeaders
         --liftIO $ print $ show maybeHead
         -- let lookupHeader = fmap listToMaybe . lookupHeaders
-        liftIO $ print maybeDNT
-	let ip = fmap (decodeUtf8) maybeIp
+        liftIO $ print ip
 	let searchEngine = "https://google.com/search?q=" :: String
 	searchTermsMaybe <- lookupGetParams "q"
 	let searchTerms = intercalate " " $ map unpack searchTermsMaybe
@@ -73,7 +72,6 @@ getSearchR = do
 		    liftIO $ print user
 		    return ()))
         let searchEngine2 = findBangs searchTerms
-        -- let searchEngine3 = fmap (++ searchTerms) searchEngine2
 	case searchEngine2 of Just x -> redirect (x :: String)
 	     		      Nothing -> $logDebug "no redirect"
 
