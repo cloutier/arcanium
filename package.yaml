@@ -49,6 +49,10 @@ dependencies:
 - regex-posix
 - regex-compat
 - network
+- wreq
+- lens
+- aeson-lens
+- aeson
 
 # The library contains all of our application code. The executable
 # defined below is just a thin wrapper.

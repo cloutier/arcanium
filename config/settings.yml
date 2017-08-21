@@ -29,4 +29,5 @@ database:
   poolsize: "_env:SQLITE_POOLSIZE:10"
 
 copyright: This is free software
+bing: 12345
 #analytics: UA-YOURCODE

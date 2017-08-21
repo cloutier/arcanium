@@ -14,6 +14,7 @@ import Text.Regex.Posix
 
 findBangs :: String -> Maybe String
 findBangs query
+  | matches "a" = result "a" "http://www.arcanium.org/search?arcanium=true&q="
   | matches "g" = result "g" "https://google.com/search?q="
   | matches "google" = result "google" "https://google.com/search?q="
   | matches "b" = result "b" "https://www.bing.com/search?q="
