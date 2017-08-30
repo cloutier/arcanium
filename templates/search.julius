@@ -1,0 +1,4 @@
+$(function() {
+	    #{ searchRes }
+})
+console.log("test");

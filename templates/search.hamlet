@@ -8,5 +8,4 @@
             <a href="http://www.yesodweb.com/book/" .btn.btn-info.btn-lg>
                 Read the Book
             <h6>
-                #{ searchRes }
 

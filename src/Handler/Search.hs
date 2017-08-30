@@ -92,7 +92,7 @@ getSearchR = do
         let bingRes = bingResReq ^. Network.Wreq.responseBody 
 	defaultLayout $ do
 	    let searchTerm = "Welcome To Yesod!" :: String
-	    let searchRes = show bingRes
+	    let searchRes = "test" :: String -- show bingRes
 	    $(widgetFile "search")
 
 

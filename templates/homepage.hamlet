@@ -1,11 +1,12 @@
 <div #search>
     <h1 #title>Arcanium</h1>
     <br>
-    <form action="/search">
-        <div .input-group .input-group-lg #searchbar>
-            <input type="text" name="q" .form-control placeholder="Search for...">
-            <span .input-group-btn>
-                <button .btn .btn-default type="submit">Search</button>
+    <div class="" id="main-row">
+        <form action="/search">
+            <div class="box search-box">
+                    <input name=q id="search-bar" placeholder="What do you want to know about?">
+                    <button type="submit" class="box-footer box-button">
+                            Search
         <button #addSearchEngine .btn .btn-default onclick="window.external.AddSearchProvider('/static/opensearch.xml');">add to search engines!</button>
     
 <div #learnMore>
@@ -13,7 +14,16 @@
          <i class="fa fa-arrow-down" aria-hidden="true"></i> The fully open source knowledge engine <i class="fa fa-arrow-down" aria-hidden="true"></i>
 
     <footer .footer>
+        <div .row>
+            <div .col-md-1>
+            <div .col-md-3>
+                <img .agpl-logo src="static/img/agpl.png">
+            <div .col-md-7>
+                 <br>
+                 <h3> Forever free
+                 <a href="https://github.com/cloutier/arcanium">Source code</a>
+            <div .col-md-1>
+        
         <div .container>
             <p .text-muted>
-                <a href="https://github.com/cloutier/arcanium">Source code</a>
                 <a href="https://commons.wikimedia.org/wiki/File:Shrouded_%288511233662%29.jpg">Background credit</a>

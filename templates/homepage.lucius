@@ -12,7 +12,7 @@ li {
 	width:90%;
 	max-width:600px;
 	height: 20vh;
-	margin-top: 40vh;
+	margin-top: 30vh;
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
@@ -42,3 +42,128 @@ li {
 }
 
 
+#main-row {
+	height: 2cm;
+margin: auto;
+width: 100%;
+max-width: 800px;
+margin: 1% auto; /* Will not center vertically and won't work in IE6/7. */
+left: 0;
+right: 0;
+}
+.box {
+	background: rgba(255, 255, 255, 0.35);
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	border: solid;
+	border-width: 1px;
+	border-color: rgba(255,255,255,0.3);
+	max-width: 600px;
+}
+#results .box {
+	width: 90%;
+	max-width: 400px;
+        flex: 1 1 auto;
+	align-self: center;
+	background: rgba(255, 255, 255, 0.07) ;
+}
+.box-content {
+	padding: 20px;
+}
+.box-footer {
+	width: 100%;
+	padding: 10px;
+	border: solid;
+	border-width: 1px 0px 0px;
+	margin-right: 20px;
+	border-color: rgba(255,255,255,0.3);
+	text-align: center;
+}
+.box-header {
+	width: 100%;
+	font-size: 130%;
+	padding: 10px;
+	text-align: center;
+}
+.box-header::after {
+	content: "";
+	display: block;
+	width: 60%;
+	border: solid;
+	border-width: 0px 0px 2px;
+	margin: auto;
+	margin-top: 15px;
+	border-color: rgba(255,255,255,0.3);
+}
+.box-button:hover {
+	background: rgba(255,255,255,0.7) !important;
+	cursor: pointer;
+}
+.box-without-background {
+	margin: 20px;
+	padding: 20px;
+}
+.image-grid {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.image-grid img {
+	padding: 3px;
+}
+#adsbygoogle {
+	max-height: 400px;
+}
+.search-box {
+max-width: 800px !important;
+}
+#search-bar {
+	background: transparent;
+	resize: none;
+	padding: 20px;
+	border:none;
+	width: 100%;
+	height: 1.6cm;
+	color: black;
+	overflow: hidden;
+}
+#search-bar .btn-default {
+	background: transparent;
+}
+#mic {
+	transform: scale(2);
+	margin-left: 45%;
+}
+.link-result img {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.link-result a:link, a:visited, a:hover, a:active {
+	color: white;
+}
+
+
+button {
+       background: transparent;
+}
+
+.footer {
+	background-color: white;
+	color: black;
+
+}
+.footer a {
+	color: black;
+
+}
+
+.agpl-logo {
+	   max-width: 100%;
+	   }
+
+.row {
+margin: 0px;
+padding-top: 75px;
+}
