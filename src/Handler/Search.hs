@@ -7,6 +7,7 @@
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE DeriveGeneric #-}
+{-# LANGUAGE RecordWildCards   #-}
 module Handler.Search where
 
 import Import
@@ -24,9 +25,9 @@ import Data.Time
 import Import.Bangs (findBangs)
 import Network.Wreq
 import Data.Aeson 
-import Control.Lens
+-- import Control.Lens
 import Data.Aeson.Lens 
-
+import Text.Shakespeare.Text 
 
 let mongoSettings = (mkPersistSettings (ConT ''MongoContext)) {mpsGeneric = False}
   in share [mkPersist mongoSettings] [persistLowerCase| 
@@ -87,12 +88,44 @@ getSearchR = do
           ""  -> redirect (searchEngine ++ searchTerms) 
           _ -> $logDebug "Using built in results"
 	
-        let opts = defaults & header "Ocp-Apim-Subscription-Key" .~ [bingToken]
-        bingResReq <- Import.lift $ Network.Wreq.getWith opts "https://api.cognitive.microsoft.com/bing/v5.0/search?q=sailing+lessons+seattle&mkt=en-us"
-        let bingRes = bingResReq ^. Network.Wreq.responseBody 
+        -- let opts = defaults & header "Ocp-Apim-Subscription-Key" .~ [bingToken]
+        -- bingResReq <- Import.lift $ Network.Wreq.getWith opts "https://api.cognitive.microsoft.com/bing/v5.0/search?q=sailing+lessons+seattle&mkt=en-us"
+        -- let bingRes = bingResReq ^. Network.Wreq.responseBody 
 	defaultLayout $ do
 	    let searchTerm = "Welcome To Yesod!" :: String
 	    let searchRes = "test" :: String -- show bingRes
 	    $(widgetFile "search")
+
+
+data Person = Person
+    { name :: Text
+    , age  :: Int
+    }
+
+instance ToJSON Person where
+    toJSON Person {..} = object
+        [ "name" .= name
+        , "age"  .= age
+        ]
+
+getSuggestR :: Handler Text
+getSuggestR = do
+	time <- liftIO getCurrentTime
+	maybeDNT <- lookupHeader "DNT"
+	maybeLang <- languages
+        let bingToken = ""
+        ip <- fmap (show . remoteHost . reqWaiRequest) getRequest
+        --tmp <- lookupHeaders
+        -- let lookupHeader = fmap listToMaybe . lookupHeaders
+        liftIO $ print ip
+	let searchEngine = "https://google.com/search?q=" :: String
+	searchTermsMaybe <- lookupGetParams "q"
+	arcaniumFlag <- lookupGetParams "arcanium"
+	let searchTerms = intercalate " " $ map unpack searchTermsMaybe
+	let arca = intercalate " " $ map unpack arcaniumFlag
+        liftIO $ print searchTerms
+
+	
+        return [st|["fir",["firefox","tile fireplace"]]|]  
 
 

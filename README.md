@@ -1,4 +1,12 @@
-Free and open source search engine
+Free and open source knowledge engine
+
+You can make natural language queries to arcanium and get directly the answer. The system defaults to a websearch when it can't find the answer directly. 
+
+# Instructions
+
+stack build
+
+
 
 # Bangs
 

@@ -5,5 +5,7 @@
   <Description>Search Arcanium</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Url method="get" type="text/html" 
-      template="http://www.arcanium.org/search?q={searchTerms}"/>
+      template="http://www.arcanium.org/search?q={searchTerms}&amp;inputencoding={inputEncoding}&amp;outputencoding={outputEncoding}"/>
+  <Url type="application/x-suggestions+json" template="http://www.arcanium.org/suggest?q={searchTerms}&amp;inputencoding={inputEncoding}&amp;outputencoding={outputEncoding}"/>
+  
 </OpenSearchDescription>

@@ -7,4 +7,5 @@
 / HomeR GET
 
 /search SearchR GET
+/suggest SuggestR GET
 
