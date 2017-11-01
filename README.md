@@ -1,6 +1,7 @@
 Free and open source knowledge engine
 
-You can make natural language queries to arcanium and get directly the answer. The system defaults to a websearch when it can't find the answer directly. 
+You can make natural language queries to arcanium and get directly the answer. The system defaults to a websearch when it can't find the answer directly.
+
 
 This project aims to be the minimal glue between a lot of free software projects: solr, wikidata instead of knowledge graph, wikipedia.
 The code aims to be as readable as possible. Make heavy use of RDF
@@ -14,7 +15,8 @@ I think the same open source revolution that Linux did to the operating system m
 
 # Instructions
 
-stack build
+stack build yesod-bin cabal-install --install-ghc
+
 
 
 
