@@ -1,0 +1,356 @@
+2017-11-01 18:20:00,469 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 18:20:01,674 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 18:20:02,202 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 18:20:02,419 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@2ff61c95 
+2017-11-01 18:20:02,435 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 18:20:02,708 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 18:20:03,345 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 18:20:03,349 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 18:20:03,373 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 18:20:03,373 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 18:20:03,373 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 18:20:03,373 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 18:26:59,772 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 18:26:59,782 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 18:26:59,789 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@2ff61c95 
+2017-11-01 18:26:59,799 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 18:26:59,800 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 18:26:59,803 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 18:26:59,811 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 18:26:59,819 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 18:29:30,152 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 18:29:30,985 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 18:29:31,283 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 18:29:31,433 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@2f3181d9 
+2017-11-01 18:29:31,454 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 18:29:31,746 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 18:29:32,159 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 18:29:32,173 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 18:29:32,223 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 18:29:32,223 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 18:29:32,223 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 18:29:32,223 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 19:00:31,973 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 19:00:31,987 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 19:00:32,010 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@2f3181d9 
+2017-11-01 19:00:32,045 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 19:00:32,054 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 19:00:32,056 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 19:00:32,057 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 19:00:32,057 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 19:05:13,084 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 19:05:14,141 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 19:05:14,380 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 19:05:14,569 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@231e5af 
+2017-11-01 19:05:14,588 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 19:05:14,811 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 19:05:15,249 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 19:05:15,251 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 19:05:15,267 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 19:05:15,267 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 19:05:15,268 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 19:05:15,268 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 19:07:34,880 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 19:07:34,888 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 19:07:34,891 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@231e5af 
+2017-11-01 19:07:34,900 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 19:07:34,901 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 19:07:34,902 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 19:07:34,902 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 19:07:34,902 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 19:51:29,666 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 19:51:30,384 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 19:51:30,632 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 19:51:30,761 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@231e5af 
+2017-11-01 19:51:30,773 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 19:51:31,060 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 19:51:31,531 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 19:51:31,542 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 19:51:31,569 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 19:51:31,569 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 19:51:31,569 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 19:51:31,569 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 19:53:11,074 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 19:53:11,078 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 19:53:11,081 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@231e5af 
+2017-11-01 19:53:11,091 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 19:53:11,092 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 19:53:11,093 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 19:53:11,093 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 19:53:11,093 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 19:53:37,932 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 19:53:38,595 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 19:53:38,836 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 19:53:38,975 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@231e5af 
+2017-11-01 19:53:39,020 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 19:53:39,293 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 19:53:39,678 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 19:53:39,687 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 19:53:39,723 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 19:53:39,723 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 19:53:39,723 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 19:53:39,723 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 20:31:45,900 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 20:31:45,912 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 20:31:45,921 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@231e5af 
+2017-11-01 20:31:45,948 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 20:31:45,951 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 20:31:45,955 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 20:31:45,956 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 20:31:45,956 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 20:34:19,970 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 20:34:21,174 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 20:34:21,608 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 20:34:21,853 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@8b3ea30 
+2017-11-01 20:34:21,872 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 20:34:22,260 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 20:34:22,896 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 20:34:22,899 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 20:34:22,925 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 20:34:22,925 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 20:34:22,925 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 20:34:22,925 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 20:34:33,171 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 20:34:33,176 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 20:34:33,179 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@8b3ea30 
+2017-11-01 20:34:33,210 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 20:34:33,216 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 20:34:33,227 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 20:34:33,229 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 20:34:33,232 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 20:35:36,123 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 20:35:37,261 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 20:35:37,642 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 20:35:37,902 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@8b3ea30 
+2017-11-01 20:35:37,951 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 20:35:38,289 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 20:35:38,788 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 20:35:38,792 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 20:35:38,878 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 20:35:38,878 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 20:35:38,879 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 20:35:38,879 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 20:38:24,497 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 20:38:24,500 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 20:38:24,504 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@8b3ea30 
+2017-11-01 20:38:24,509 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 20:38:24,511 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 20:38:24,513 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 20:38:24,514 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 20:38:24,514 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 20:43:31,525 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 20:43:32,884 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 20:43:33,412 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 20:43:33,797 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@24287e5e 
+2017-11-01 20:43:33,839 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 20:43:34,317 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 20:43:34,952 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 20:43:34,959 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 20:43:35,056 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 20:43:35,059 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 20:43:35,065 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 20:43:35,066 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 20:44:57,463 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 20:44:57,467 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 20:44:57,471 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@24287e5e 
+2017-11-01 20:44:57,477 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 20:44:57,478 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 20:44:57,479 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 20:44:57,480 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 20:44:57,480 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 20:49:09,071 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 20:49:09,994 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 20:49:10,469 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 20:49:10,772 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@605049be 
+2017-11-01 20:49:10,814 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 20:49:11,186 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 20:49:11,918 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 20:49:11,922 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 20:49:12,003 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 20:49:12,004 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 20:49:12,004 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 20:49:12,004 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 20:49:49,672 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 20:49:49,677 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 20:49:49,679 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@605049be 
+2017-11-01 20:49:49,685 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 20:49:49,686 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 20:49:49,687 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 20:49:49,687 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 20:49:49,688 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 20:50:49,255 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 20:50:50,249 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 20:50:50,594 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 20:50:50,733 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@605049be 
+2017-11-01 20:50:50,745 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 20:50:51,037 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 20:50:51,534 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 20:50:51,545 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 20:50:51,568 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 20:50:51,568 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 20:50:51,568 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 20:50:51,569 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 20:53:12,526 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 20:53:12,546 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 20:53:12,564 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@605049be 
+2017-11-01 20:53:12,585 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 20:53:12,586 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 20:53:12,587 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 20:53:12,587 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 20:53:12,587 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 20:54:29,688 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 20:54:30,841 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 20:54:31,187 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 20:54:31,408 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@73d7b6b0 
+2017-11-01 20:54:31,429 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 20:54:31,678 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 20:54:32,223 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 20:54:32,226 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 20:54:32,299 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 20:54:32,300 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 20:54:32,301 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 20:54:32,301 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 20:54:47,250 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 20:54:47,254 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 20:54:47,258 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@73d7b6b0 
+2017-11-01 20:54:47,268 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 20:54:47,269 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 20:54:47,271 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 20:54:47,271 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 20:54:47,271 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 20:55:42,172 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 20:55:43,326 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 20:55:43,764 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 20:55:43,980 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@5ae50044 
+2017-11-01 20:55:44,037 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 20:55:44,371 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 20:55:44,765 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 20:55:44,776 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 20:55:44,829 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 20:55:44,829 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 20:55:44,830 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 20:55:44,830 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 20:55:57,206 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 20:55:57,225 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 20:55:57,250 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@5ae50044 
+2017-11-01 20:55:57,283 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 20:55:57,286 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 20:55:57,288 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 20:55:57,290 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 20:55:57,290 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 20:57:26,659 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 20:57:28,056 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 20:57:28,574 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 20:57:28,797 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@5ae50044 
+2017-11-01 20:57:28,842 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 20:57:29,174 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 20:57:29,952 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 20:57:29,973 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 20:57:30,046 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 20:57:30,046 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 20:57:30,046 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 20:57:30,046 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 20:57:44,591 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 20:57:44,592 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 20:57:44,596 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@5ae50044 
+2017-11-01 20:57:44,602 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 20:57:44,603 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 20:57:44,604 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 20:57:44,605 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 20:57:44,605 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 21:02:19,215 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 21:02:20,935 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 21:02:21,479 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 21:02:21,838 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@7c453a1f 
+2017-11-01 21:02:21,908 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 21:02:22,262 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 21:02:22,828 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 21:02:22,831 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 21:02:22,908 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 21:02:22,908 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 21:02:22,908 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 21:02:22,909 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 21:02:35,682 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 21:02:35,684 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 21:02:35,689 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@7c453a1f 
+2017-11-01 21:02:35,712 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 21:02:35,714 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 21:02:35,715 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 21:02:35,715 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 21:02:35,716 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 21:04:33,033 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 21:04:33,778 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 21:04:34,005 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 21:04:34,167 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@532f568e 
+2017-11-01 21:04:34,198 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 21:04:34,389 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 21:04:34,839 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 21:04:34,842 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 21:04:34,886 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 21:04:34,888 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 21:04:34,889 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 21:04:34,890 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 21:05:58,715 [XNIO-1 task-1] DEBUG arcanium.routes.home - test 
+2017-11-01 21:05:58,802 [XNIO-1 task-1] DEBUG arcanium.routes.home - {:ssl-client-cert nil, :cookies {JSESSIONID {:value w7amwwZXmerCy-9CKKuTCykej73xpGqVJ6R_2Zpl}}, :remote-addr 127.0.0.1, :params {:q ewaf}, :flash nil, :handler-type :undertow, :route-handler #object[compojure.core$wrap_response$fn__2258 0x67c8534d compojure.core$wrap_response$fn__2258@67c8534d], :route-params {}, :headers {host localhost:3000, user-agent Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0, cookie JSESSIONID=w7amwwZXmerCy-9CKKuTCykej73xpGqVJ6R_2Zpl, referer http://localhost:3000/test, connection keep-alive, upgrade-insecure-requests 1, accept text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, accept-language en-US,fr;q=0.8,en;q=0.5,eo;q=0.3, accept-encoding gzip, deflate}, :server-port 3000, :muuntaja/request nil, :content-length -1, :form-params {}, :compojure/route [:get /search], :server-exchange #object[io.undertow.server.HttpServerExchange 0x318d2bcb HttpServerExchange{ GET /search request {Accept=[text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8], Accept-Language=[en-US,fr;q=0.8,en;q=0.5,eo;q=0.3], Accept-Encoding=[gzip, deflate], User-Agent=[Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0], Connection=[keep-alive], Cookie=[JSESSIONID=w7amwwZXmerCy-9CKKuTCykej73xpGqVJ6R_2Zpl], Referer=[http://localhost:3000/test], Upgrade-Insecure-Requests=[1], Host=[localhost:3000]} response {Server=[undertow]}}], :query-params {q ewaf}, :content-type nil, :path-info /search, :character-encoding ISO-8859-1, :context , :uri /search, :server-name localhost, :query-string q=ewaf, :muuntaja/response #FormatAndCharset{:format application/json, :charset utf-8}, :body #object[io.undertow.io.UndertowInputStream 0x39428d70 io.undertow.io.UndertowInputStream@39428d70], :multipart-params {}, :scheme :http, :request-method :get, :route-middleware #object[clojure.core$comp$fn__4727 0x7bba55c0 clojure.core$comp$fn__4727@7bba55c0], :session nil} 
+2017-11-01 21:06:11,708 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 21:06:11,710 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 21:06:11,715 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@532f568e 
+2017-11-01 21:06:11,729 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 21:06:11,731 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 21:06:11,732 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 21:06:11,733 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 21:06:11,733 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
+2017-11-01 21:07:05,602 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2017-11-01 21:07:06,668 [main] INFO  arcanium.env - 
+-=[arcanium started successfully using the development profile]=- 
+2017-11-01 21:07:06,978 [main] INFO  luminus.http-server - starting HTTP server on port 3000 
+2017-11-01 21:07:07,179 [main] DEBUG io.undertow - starting undertow server io.undertow.Undertow@532f568e 
+2017-11-01 21:07:07,201 [main] INFO  org.xnio - XNIO version 3.3.6.Final 
+2017-11-01 21:07:07,417 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2017-11-01 21:07:07,877 [main] INFO  org.projectodd.wunderboss.web.Web - Registered web context / 
+2017-11-01 21:07:07,890 [main] INFO  luminus.repl-server - starting nREPL server on port 7000 
+2017-11-01 21:07:07,944 [main] INFO  arcanium.core - #'arcanium.config/env started 
+2017-11-01 21:07:07,945 [main] INFO  arcanium.core - #'arcanium.handler/init-app started 
+2017-11-01 21:07:07,945 [main] INFO  arcanium.core - #'arcanium.core/http-server started 
+2017-11-01 21:07:07,945 [main] INFO  arcanium.core - #'arcanium.core/repl-server started 
+2017-11-01 21:07:16,139 [XNIO-1 task-1] DEBUG arcanium.routes.home - test 
+2017-11-01 21:07:16,183 [XNIO-1 task-1] DEBUG arcanium.routes.home - {:ssl-client-cert nil, :cookies {JSESSIONID {:value w7amwwZXmerCy-9CKKuTCykej73xpGqVJ6R_2Zpl}}, :remote-addr 127.0.0.1, :params {:q ewaf}, :flash nil, :handler-type :undertow, :route-handler #object[compojure.core$wrap_response$fn__2258 0x6a2acd15 compojure.core$wrap_response$fn__2258@6a2acd15], :route-params {}, :headers {host localhost:3000, user-agent Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0, cookie JSESSIONID=w7amwwZXmerCy-9CKKuTCykej73xpGqVJ6R_2Zpl, referer http://localhost:3000/test, connection keep-alive, upgrade-insecure-requests 1, accept text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, accept-language en-US,fr;q=0.8,en;q=0.5,eo;q=0.3, accept-encoding gzip, deflate}, :server-port 3000, :muuntaja/request nil, :content-length -1, :form-params {}, :compojure/route [:get /search], :server-exchange #object[io.undertow.server.HttpServerExchange 0x736a8b57 HttpServerExchange{ GET /search request {Accept=[text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8], Accept-Language=[en-US,fr;q=0.8,en;q=0.5,eo;q=0.3], Accept-Encoding=[gzip, deflate], User-Agent=[Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0], Connection=[keep-alive], Cookie=[JSESSIONID=w7amwwZXmerCy-9CKKuTCykej73xpGqVJ6R_2Zpl], Referer=[http://localhost:3000/test], Upgrade-Insecure-Requests=[1], Host=[localhost:3000]} response {Server=[undertow]}}], :query-params {q ewaf}, :content-type nil, :path-info /search, :character-encoding ISO-8859-1, :context , :uri /search, :server-name localhost, :query-string q=ewaf, :muuntaja/response #FormatAndCharset{:format application/json, :charset utf-8}, :body #object[io.undertow.io.UndertowInputStream 0x3ce8c5b9 io.undertow.io.UndertowInputStream@3ce8c5b9], :multipart-params {}, :scheme :http, :request-method :get, :route-middleware #object[clojure.core$comp$fn__4727 0x26728677 clojure.core$comp$fn__4727@26728677], :session nil} 
+2017-11-01 21:07:49,364 [Thread-2] INFO  luminus.repl-server - nREPL server stopped 
+2017-11-01 21:07:49,369 [Thread-2] DEBUG org.projectodd.wunderboss.WunderBoss - Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options. 
+2017-11-01 21:07:49,374 [Thread-2] DEBUG io.undertow - stopping undertow server io.undertow.Undertow@532f568e 
+2017-11-01 21:07:49,389 [Thread-2] INFO  luminus.http-server - HTTP server stopped 
+2017-11-01 21:07:49,392 [Thread-2] INFO  arcanium.env - 
+-=[arcanium has shut down successfully]=- 
+2017-11-01 21:07:49,396 [Thread-2] INFO  arcanium.core - #'arcanium.core/repl-server stopped 
+2017-11-01 21:07:49,397 [Thread-2] INFO  arcanium.core - #'arcanium.core/http-server stopped 
+2017-11-01 21:07:49,398 [Thread-2] INFO  arcanium.core - #'arcanium.handler/init-app stopped 
