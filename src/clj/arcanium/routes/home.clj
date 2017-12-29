@@ -14,6 +14,9 @@
 (defn about-page []
   (layout/render "about.html"))
 
+(defn suggest-json [req]
+  (ok ["fir",["firefox","tile fireplace"]]))
+
 (defn bangRegex [bang]
   (re-pattern (str "(^|\\s)" bang "($|\\s)")))
 
@@ -46,6 +49,7 @@
 (defroutes home-routes
   (GET "/" [] (home-page))
   (GET "/search" req (search-page req))
+  (GET "/suggest" req (suggest-json req))
   (GET "/doc" [] (doc-page))
   (GET "/about" [] (about-page)))
 
