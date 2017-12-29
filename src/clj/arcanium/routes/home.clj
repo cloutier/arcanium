@@ -7,7 +7,7 @@
             [ring.util.http-response :refer [found content-type ok]]
             [clojure.java.io :as io]))
 
-(defn home-page []
+(defn doc-page []
   (layout/render
     "home.html" {:docs (-> "docs/docs.md" io/resource slurp)}))
 
@@ -30,14 +30,14 @@
   (match [query]
          [_ :guard #(bangFinder "!g" %)] (str "https://google.com/search?q=" (bangReplacer "!g" query))
          [_ :guard #(bangFinder "!b" %)] (str "https://bing.com/search?q=" (bangReplacer "!b" query))
-         :else nil))
+         :else (str "https://google.com/search?q=" query)))
 
 (defn search-page [req]
   (log/debug "test")
   (log/debug req)
   (found (findBangs (get-in req [:params :q]))) )
 
-(defn test-page []
+(defn home-page []
   (content-type
     (ok
       (-> "frontend/1.html" io/resource slurp))
@@ -46,6 +46,6 @@
 (defroutes home-routes
   (GET "/" [] (home-page))
   (GET "/search" req (search-page req))
-  (GET "/test" [] (test-page))
+  (GET "/doc" [] (doc-page))
   (GET "/about" [] (about-page)))
 
