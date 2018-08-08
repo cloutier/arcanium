@@ -43,7 +43,7 @@
 (defn home-page []
   (content-type
     (ok
-      (-> "frontend/1.html" io/resource slurp))
+      (-> "pages/home.html" io/resource slurp))
     "text/html; charset=utf-8"))
 
 (defroutes home-routes

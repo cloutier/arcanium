@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Arcanium - Open source search engine</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Averia+Sans+Libre:300' rel='stylesheet' type='text/css'>
+    <style>
+      body, .navbar {
+      background: url("http://vincent.cloutier.co/arcanium-frontend/background.jpg") no-repeat center center fixed;
+      background-size: cover; 
+      }
+
+      .navbar {
+      display: none;
+      }
+      .navbar-default .navbar-nav > .active > a {
+	background-color: transparent;
+	border-bottom: 2px solid white;
+	}
+
+	.navbar-nav {
+	padding-bottom: 1em;
+	}
+
+	.masthead {
+	margin-top: -21px;
+	color: white;
+	text-align: center;
+	min-height: 500px;
+	}
+
+	.masthead .header {
+	max-width: 700px;
+	margin: 0 auto;
+	font-family: lato,'helvetica neue',arial,helvetica,sans-serif;
+	}
+
+	.masthead h1.header {
+	margin-top: 1em;
+	margin-bottom: 0em;
+	font-size: 4.5em;
+	line-height: 1.2em;
+	font-weight: normal;
+	}
+
+	.masthead h2 {
+	font-size: 1.7em;
+	font-weight: normal;
+	}
+
+	.masthead .btn {
+	margin: 1em 0;
+	}
+
+
+	/* common styles for all types */
+	.bs-callout {
+	padding: 20px;
+	margin: 20px 0;
+	border: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px;
+	}
+
+	.bs-callout p:last-child {
+	margin-bottom: 0;
+	}
+
+	.bs-callout-info {
+	border-left-color: #1b809e;
+	}
+
+	/* space things out */
+	.bs-docs-section {
+	margin-bottom: 60px;
+	}
+	.bs-docs-section:last-child {
+	margin-bottom: 0;
+	}
+
+	#message {
+	margin-bottom: 40px;
+	}
+
+
+	li {
+	line-height: 2em;
+	font-size: 16px
+	}
+
+	#title {
+	font-family: 'Averia Sans Libre', cursive;
+	color: white;
+	}
+	#search {
+	width:90%;
+	max-width:600px;
+	height: 20vh;
+	margin-top: 30vh;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	#searchbar {
+	width: 100%;
+	}
+
+	#addSearchEngine {
+	visibility: hidden;
+	margin-top: 50px;
+	}
+
+	#learnMore {
+	position: absolute;
+	top: 90vh;
+	width: 100%;
+	background-color: grey;
+	color: white;
+	}
+
+	#incitation {
+	height: 10vh;
+	text-align: center;
+	font-size: 5vmin;
+	padding-top: 1vh;
+	}
+
+
+	#main-row {
+	height: 2cm;
+	margin: auto;
+	width: 100%;
+	max-width: 800px;
+	margin: 1% auto; /* Will not center vertically and won't work in IE6/7. */
+	left: 0;
+	right: 0;
+	}
+	.box {
+	background: rgba(255, 255, 255, 0.35);
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	border: solid;
+	border-width: 1px;
+	border-color: rgba(255,255,255,0.3);
+	max-width: 600px;
+	}
+	#results .box {
+	width: 90%;
+	max-width: 400px;
+	flex: 1 1 auto;
+	align-self: center;
+	background: rgba(255, 255, 255, 0.07) ;
+	}
+	.box-content {
+	padding: 20px;
+	}
+	.box-footer {
+	width: 100%;
+	padding: 10px;
+	border: solid;
+	border-width: 1px 0px 0px;
+	margin-right: 20px;
+	border-color: rgba(255,255,255,0.3);
+	text-align: center;
+	}
+	.box-header {
+	width: 100%;
+	font-size: 130%;
+	padding: 10px;
+	text-align: center;
+	}
+	.box-header::after {
+	content: "";
+	display: block;
+	width: 60%;
+	border: solid;
+	border-width: 0px 0px 2px;
+	margin: auto;
+	margin-top: 15px;
+	border-color: rgba(255,255,255,0.3);
+	}
+	.box-button:hover {
+	background: rgba(255,255,255,0.7) !important;
+	cursor: pointer;
+	}
+	.box-without-background {
+	margin: 20px;
+	padding: 20px;
+	}
+	.image-grid {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.image-grid img {
+	padding: 3px;
+	}
+	#adsbygoogle {
+	max-height: 400px;
+	}
+	.search-box {
+	max-width: 800px !important;
+	}
+	#search-bar {
+	background: transparent;
+	resize: none;
+	padding: 20px;
+	border:none;
+	width: 100%;
+	height: 1.6cm;
+	color: black;
+	overflow: hidden;
+	}
+	#search-bar .btn-default {
+	background: transparent;
+	}
+	#mic {
+	transform: scale(2);
+	margin-left: 45%;
+	}
+	.link-result img {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	}
+	.link-result a:link, a:visited, a:hover, a:active {
+	color: white;
+	}
+
+
+	button {
+	background: transparent;
+	}
+
+	.footer {
+	background-color: white;
+	color: black;
+
+	}
+	.footer a {
+	color: black;
+
+	}
+
+	.agpl-logo {
+	max-width: 100%;
+	}
+
+	.row {
+	margin: 0px;
+	padding-top: 75px;
+	}
+</style>
+</head>
+<body>
+  
+  <div id="search">
+    <h1 id="title">Arcanium</h1>
+    <br>
+    <div class="" id="main-row">
+      <form action="/search">
+	<div class="box search-box">
+	  <input name="q" id="search-bar" placeholder="What do you want to know about?">
+	  <button class="box-footer box-button" type="submit">Search</button>
+	</div>
+      </form>
+      <button class="btn btn-default" id="addSearchEngine" onclick="window.external.AddSearchProvider('/static/opensearch.xml');">add to search engines!</button>
+    </div>
+  </div>
+  <div id="learnMore">
+    <div id="incitation">
+      <i class="fa fa-arrow-down" aria-hidden="true"></i> The fully open source knowledge engine <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </div>
+    <footer class="footer">
+      <div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-3">
+	  <img class="agpl-logo" src="/img/agpl.png">
+	</div>
+	<div class="col-md-7"><br>
+	  <h3> Forever free</h3>
+	  <a href="https://github.com/cloutier/arcanium">Source code</a></a>
+</div>
+<div class="col-md-1"></div>
+</div>
+<div class="container">
+  <p class="text-muted">
+    <a href="https://commons.wikimedia.org/wiki/File:Shrouded_%288511233662%29.jpg">Background credit</a>
+  </p>
+</div>
+</footer>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  
+  $(function() {
+  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+  $("#addSearchEngine").css("visibility", "visible");
+  console.log("test");
+  }
+  })
+</script>
+
+</body>
+</html>
