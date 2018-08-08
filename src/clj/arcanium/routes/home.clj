@@ -4,6 +4,8 @@
             [clojure.core.match :refer [match]]
             [ring.util.http-response :as response]
             [clojure.tools.logging :as log]
+            [clojure.data.json :as json]
+            [clj-http.client :as client]
             [ring.util.http-response :refer [found content-type ok]]
             [clojure.java.io :as io]))
 
@@ -15,7 +17,19 @@
   (layout/render "about.html"))
 
 (defn suggest-json [req]
-  (ok ["fir",["firefox","tile fireplace"]]))
+  (log/debug (type (:body (client/get
+       "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=test&format=json&language=en&uselang=en&type=item"
+       {:accept :json
+        :cookie-policy :standard}))))
+  (let [wikidata-req
+        (:body (client/get
+                "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=test&format=json&language=en&uselang=en&type=item"
+                {:accept :json
+                 :cookie-policy :standard}))
+        result-json (json/read-str wikidata-req)
+        only-string (map #(get-in % ["label"]) (get-in result-json ["search"]))
+        ]
+    (ok only-string)))
 
 (defn bangRegex [bang]
   (re-pattern (str "(^|\\s)" bang "($|\\s)")))

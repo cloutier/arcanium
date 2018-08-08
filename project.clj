@@ -10,6 +10,7 @@
                  [luminus-immutant "0.2.4"]
                  [luminus-nrepl "0.1.4"]
                  [luminus/ring-ttl-session "0.3.2"]
+                 [clj-http "3.9.1"]
                  [markdown-clj "1.0.1"]
                  [metosin/muuntaja "0.3.2"]
                  [metosin/ring-http-response "0.9.0"]
